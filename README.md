@@ -120,3 +120,6 @@ openai.api_key = "your-api-key"
 ### 📬 Contact
 
 For any queries, feel free to reach out or raise an issue in the repository.
+
+👉 Check out the frontend repository here: [chatbot_frontend](https://github.com/mayurpatidar1401/chatbot-frontend)
+

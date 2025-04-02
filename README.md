@@ -31,7 +31,7 @@ This project is a hybrid AI chatbot that combines the intent classification capa
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/chatbot-backend.git
+git clone https://github.com/mayurpatidar1401/chatbot_backend.git
 cd chatbot-backend
 ```
 

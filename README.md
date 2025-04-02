@@ -33,40 +33,48 @@ This project is a hybrid AI chatbot that combines the intent classification capa
 ```bash
 git clone https://github.com/your-username/chatbot-backend.git
 cd chatbot-backend
+```
 
 ### 2. Create & Activate Virtual Environment
-
+```bash
 python3 -m venv chatbot_env
 source chatbot_env/bin/activate
+```
 
 ### 3. Install Requirements
-
+```bash
 pip install -r requirements.txt
+```
 
 ### 4. Set Up PostgreSQL
 
 -- In psql terminal
+```bash
 CREATE DATABASE chatbot_db;
 CREATE USER chatbot_user WITH ENCRYPTED PASSWORD 'chatbot_password';
 GRANT ALL PRIVILEGES ON DATABASE chatbot_db TO chatbot_user;
-
-🚦 Run the Services
+```
+## 🚦 Run the Services
 
 ### Start FastAPI Server
-
+```bash
 uvicorn app:app --reload --host 0.0.0.0 --port 8000
+```
 
 ### Train Rasa Model
-
+```bash
 rasa train
+```
 
 ### Run Rasa Server
-
+```bash
 rasa run --enable-api --cors "*" --debug
+```
 
 ### Run Action Server
-
+```bash
 rasa run actions --actions actions --debug
+```
 
 ### 🧠 Intent Mapping (Sample)
 
